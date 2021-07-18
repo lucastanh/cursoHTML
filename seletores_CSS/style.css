@@ -1,0 +1,44 @@
+/* seletor universal: todos os elementos serão selecionados */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* seletor por elemento: todos os elementos "section" serão selecionados */
+section {
+  width: 400px;
+  height: 400px;
+  background: red;
+}
+
+/* seletor por classe: todos os elementos com a classe "exemplo-de-classe" serão selecionados */
+.exemplo-de-classe {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+/* seletor por id: o elemento com o id ".exemplo-de-id" será selecionado */
+#exemplo-de-id {
+  color: white;
+}
+
+/* selecionando um elemento dentro de outro elemento */
+section div p{
+  color: aqua;
+}
+
+/* dentro de uma classe seleciona um elemento */
+.div-2 h2 {
+  color: deeppink;
+}
+
+/* adjacent sibling selector: seleciona o único objeto(p) depois do objeto selecionado(classe ".adjacent-sibling-selector") */
+.adjacent-sibling-selector+p {
+  color: blueviolet;
+}
+
+/* general sibling selector: seleciona todos os objetos(todos os p) depois do objeto selecionado(classe ".general-sibling-selector") */
+.general-sibling-selector~p {
+  color: fuchsia;
+}

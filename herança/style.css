@@ -1,0 +1,13 @@
+#texto {
+  color: red;
+  font-family: sans-serif;
+  font-size: 70px;
+}
+
+
+/* o initial faz com que o elemento não herde a propriedade do pai */
+/* o inherit faz com que o elemento herde a propriedade do pai */
+p {
+  font-size: initial;
+  color: inherit;
+}

@@ -1,0 +1,36 @@
+/* 
+  ID  |  Classes  |  atributos  |  pseudo-classes  |  Elementos  |  pseudo-elementos
+  1         0                                             0
+  0         1                                             0
+  1         1                                             0
+  1         1                                             1
+  2         1                                             1
+  2         2                                             2
+
+
+*/
+
+#p {
+  background: red;
+}
+
+.p {
+  background-color: blue;
+}
+
+#p.p {
+  background: yellow;
+}
+
+p#p.p {
+  background: purple;
+}
+
+#b p#p.p {
+  background: cyan;
+}
+
+body#b.bclass p#p.p {
+  background-color: darkgreen;
+  color: blueviolet;
+}

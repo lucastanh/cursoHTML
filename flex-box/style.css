@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+flex-direction: indica a direção do eixo principal dos elementos
+  row: alinha os itens na mesma linha
+  column: alinha os itens na mesma coluna
+  (row or column)-reverse: alinha os itens ao contrário
+
+justfy-content: alinha os itens de acordo com o eixo principal
+
+aling-items: alinha os itens de acordo com o eixo perpendicular
+
+flex-wrap: alinha os itens de acordo com o tamanho da tela quebrando linhas impedindo que haja um overflow
+
+flex-flow: é um atalho com os valores de flex-(direction, wrap)
+ */
+.flex-container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* align-content: center; */
+  background: yellow;
+  height: 800px;
+}
+
+/* 
+flex-grow: faz com que os elementos se acomodem divindo o espaço que sobra entre eles
+
+flex-shrink: permite ou não que o elemento diminua
+
+flex-basis: reserva um espaço minimo para os elementos antes de dividir o espaço que sobra entre eles
+
+flex: é um atalho com os valores de flex-(grow, shrink, basis)
+*/
+.flex-item {
+  /* flex-grow: 1;
+  flex-shrink: 0; */
+  /* flex-basis: 320px; */
+  /* flex: 1 0 320px; */
+  /* height: 200px; */
+  background: red;
+  /* margin: 10px; */
+  width: 100%;
+}
+
+/* 
+align-self: alinha somente o elemento selecionado
+*/
+.flex-item:nth-child(3) {
+  align-self: flex-end;
+}
+
+/* 
+order: ordena o elemento conforme o número, quanto maior o número o elemento fica no final da lista
+*/
+.flex-item:nth-child(1) {
+  order: 1;
+}

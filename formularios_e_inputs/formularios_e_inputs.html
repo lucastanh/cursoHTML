@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form action="#" method="get" target="_blank" autocomplete="off">
+
+    <p>O meu formulário</p>
+
+    <p>
+      <label for="nome" class="label-block">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Seu nome aqui" required>
+    </p>
+
+    <p>
+      <label for="dev1">Sou um dev</label>
+      <input type="checkbox" name="dev" id="dev1" value="sim"><br>
+
+      <label for="dev2">Sou um dev</label>
+      <input type="checkbox" name="dev" id="dev2" value="sim"><br>
+
+      <label for="dev3">Sou um dev</label>
+      <input type="checkbox" name="dev" id="dev3" value="sim"><br>
+    </p>
+
+    <p>
+      Gênero:<br>
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="genero" id="masculino" value="masculino"><br>
+
+      <label for="feminino">Feminino</label>
+      <input type="radio" name="genero" id="feminino" value="feminino"><br>
+
+      <label for="outro">Outro</label>
+      <input type="radio" name="genero" id="outro" value="outro"><br>
+    </p>
+
+    <p>
+      <label for="date" class="label-block">Date:</label>
+      <input type="date" name="date" id="date" value="2021-03-25">
+    </p>
+
+    <p>
+      <label for="datetime" class="label-block">Date Time:</label>
+      <input type="datetime-local" name="datetime" id="datetime" value="2021-03-25T15:31">
+    </p>
+
+    <p>
+      <label for="time" class="label-block">Time:</label>
+      <input type="time" name="time" id="time" value="15:34">
+    </p>
+
+    <p>
+      <label for="color" class="label-block">Color:</label>
+      <input type="color" name="color" id="color" value="#990099">
+    </p>
+
+    <p>
+      <label for="email" class="label-block">Email:</label>
+      <input type="email" name="email" id="email" placeholder="exemple@email.com">
+    </p>
+
+    <p>
+      <label for="file" class="label-block">Arquivo:</label>
+      <input type="file" name="file" id="file" accept=".txt, image/*" multiple>
+    </p>
+
+    <p>
+      <label for="number" class="label-block">Number:</label>
+      <input type="number" name="number" id="number" min="18" max="99" step="5">
+    </p>
+
+    <p>
+      <label for="password" class="label-block">Password:</label>
+      <input type="password" name="password" id="password" >
+    </p>
+
+    <p>
+      <label for="range" class="label-block">Range:</label>
+      <input type="range" name="range" id="range" min="0" max="10" list="tickmarks">
+
+      <datalist id="tickmarks">
+        <option value="0" label="0%">
+        <option value="10">
+        <option value="20">
+        <option value="30">
+        <option value="40">
+        <option value="50" label="50%">
+        <option value="60">
+        <option value="70">
+        <option value="80">
+        <option value="90">
+        <option value="100" label="100%">
+      </datalist>
+    </p>
+
+    <p>
+      <label for="url" class="label-block">URL:</label>
+      <input type="url" name="url" id="url">
+    </p>
+
+    <p>
+      <label for="search" class="label-block">Search:</label>
+      <input type="search" name="search" id="search" placeholder="Pesquisar">
+    </p>
+
+    <p>
+      <label for="select" class="label-block">Select:</label>
+      <select id="select" name="select">
+        <optgroup label="Tamanho:">
+          <option value="pequeno">Pequeno</option>
+          <option value="médio">Médio</option>
+          <option value="grande">Grande</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label for="textarea" class="label-block">Text area:</label>
+      <textarea name="textarea" id="textarea" cols="9" rows="3" ></textarea>
+    </p>
+
+    <p>
+      <button type="reset">Redefinir</button>
+      <button type="submit">Enviar</button>
+    </p>
+
+  </form>
+
+</body>
+
+</html>

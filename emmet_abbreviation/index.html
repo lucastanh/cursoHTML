@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    body {
+      /* w100p */
+      width: 100%;
+
+      /* h100vh */
+      height: 100vh;
+
+      /* m10rem */
+      margin: 10rem;
+
+      /* p10p */
+      padding: 10%;
+
+      /* dg */
+      display: grid;
+
+      /* dn */
+      display: none;
+
+      /* db */
+      display: block;
+
+      /* df */
+      display: flex;
+
+      /* bg */
+      background: #000;
+
+      /* bgc */
+      background-color: #fff;
+
+      /* bgi */
+      background-image: url();
+
+      /* pos */
+      position: relative;
+
+      /* posr */
+      position: relative;
+
+      /* posa */
+      position: absolute;
+
+      /* t10rem */
+      top: 10rem;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <!-- div.classe-um: cria uma div já com uma classe-->
+  <div class="classe-um"></div>
+
+  <!-- div#id: cria uma div já com um id-->
+  <div id="id"></div>
+
+  <!-- div#id.classe-um: cria uma div já com um id e uma classe-->
+  <div id="id" class="classe-um"></div>
+
+  <!-- div{conteúdo}: cria uma div já com o conteúdo-->
+  <div>conteúdo</div>
+
+  <!-- div*3: cria varias divs(depende do número após o sinal de *)-->
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <!-- div#meu-id-$*3: cria varias divs e o cifrão é enumerado(1, 2, 3...)-->
+  <div id="meu-id-1"></div>
+  <div id="meu-id-2"></div>
+  <div id="meu-id-3"></div>
+
+  <!-- ul>li{conteúdo $} -->
+  <ul>
+    <li>conteudo 1</li>
+    <li>conteudo 2</li>
+    <li>conteudo 3</li>
+  </ul>
+
+  <!-- ul>(li>a{conteudo $})*3: multiplica o grupo que está dentro do parenteses -->
+  <ul>
+    <li><a href="">conteudo 1</a></li>
+    <li><a href="">conteudo 2</a></li>
+    <li><a href="">conteudo 3</a></li>
+  </ul>
+
+  <!-- ul>(li>a{conteudo $}[href="http://link.com/conteudo-$"]): para atribuir atributos usamos []-->
+  <ul>
+    <li><a href="http://link.com/conteudo-1">conteudo 1</a></li>
+  </ul>
+  
+  <!-- div.minha-classe#home>h1{Conteúdo qualquer}+(p{Com qualquer conteúdo }>a[href="#home"]{clique aqui }+{para saber mais})*2 -->
+  <div class="minha-classe" id="home">
+    <h1>Conteúdo qualquer</h1>
+    <p>Com qualquer conteúdo <a href="#home">clique aqui </a>para saber mais</p>
+    <p>Com qualquer conteúdo <a href="#home">clique aqui </a>para saber mais</p>
+  </div>
+</body> 
+</html>

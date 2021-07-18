@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+/* 
+fragmento ou fr equivale ao tamanho restante da tela
+
+repeat: o primeiro parâmetro define o número de repetições, o segundo define o tamanho dos elementos
+
+auto fill: impede o overflow fazendo a quebra de linha para os elementos se encaixarem
+
+minmax: define um tamanho mínimo e um tamanho máximo para os elementos
+
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* gap: 30px; */
+  margin-right: -30px;
+}
+
+.grid div {
+  background: tomato;
+  min-height: 50px;
+  margin: 0 30px 30px 0;
+}
+
+.grid div:nth-child(5) {
+  background: darkred;
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .grid div:nth-child(5) {
+    grid-column: span 1;
+  }  
+}

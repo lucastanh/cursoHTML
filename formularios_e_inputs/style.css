@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+label {
+  cursor: pointer;
+  /* display: block; */
+}
+
+.label-block {
+  display: block;
+}

@@ -1,0 +1,8 @@
+.box-shadow {
+  width: 300px;
+  height: 300px;
+  margin: 100px 100px;
+  background: red;
+  box-shadow: inset 5px 5px 5px 5px rgb(0, 0, 255), 5px 5px 5px black;
+}
+/* inset faz com que a sombra vá para dentro do objeto */

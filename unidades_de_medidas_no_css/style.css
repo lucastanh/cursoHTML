@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.pai {
+  width: 50rem;
+  height: 100vw;
+  background: yellow;
+}
+
+.pai > div {
+  width: 50%;
+  height: 50rem;
+  background: blue;
+}
+
+.color-red {
+  background: red;
+}
+
+.color-deeppink {
+  background: deeppink;
+}

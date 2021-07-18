@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  margin: 15px 15px;
+}
+
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid .col {
+  box-sizing: border-box;
+  border: 15px solid white;
+  width: 33.33%;
+  height: 300px;
+  background: #9400a1;
+  float: left;
+}
+
